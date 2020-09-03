@@ -1,0 +1,11 @@
+BS
+
+1st submission 
+
+JQuery (optional)
+homepage with content
+responsive 
+sublinks(any)(no working)
+
+dropdown navigation
+use js (optional)

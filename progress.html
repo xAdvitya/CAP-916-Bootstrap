@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,36 +24,21 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <script>
       $(() => {
         $('[data-toggle="popover"]').popover();
       });
     </script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>pop over</h1>
-      <button
-        data-toggle="popover"
-        data-trigger="focus"
-        data-placement="top"
-        data-content="popover"
-      >
-        pop
-      </button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <button
-        data-toggle="popover"
-        data-trigger="focus"
-        data-placement="top"
-        data-content="popover"
-        class="btn"
-      >
-        pop second
-      </button>
+    <title>doc</title>
+  </head>
+
+  <body>
+    <div class="bs-example">
+      <div class="progress">
+        <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width: 25%">25%</div>
+      </div>
     </div>
   </body>
 </html>

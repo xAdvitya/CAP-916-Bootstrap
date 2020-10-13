@@ -1,0 +1,151 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #c5b8ba !important;
+  scrollbar-width: thin !important;
+  overflow-x: hidden;
+}
+.nav {
+  background-color: #ff4f75 !important;
+  line-height: 30px;
+}
+.nav-link {
+  color: black !important;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.photos {
+  margin-top: 0px;
+  height: 400px !important;
+  width: 300px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.products {
+  width: 100%;
+  height: 600px !important;
+}
+
+.btn {
+  background-color: #111111 !important;
+  font-size: 20px !important;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+}
+
+.shop {
+  display: flex;
+  background-color: #f2cfd4;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.shop > a>button {
+  width: 400px !important;
+  height: 200px !important;
+  /* background-color: !important; */
+  font-size: 40px !important;
+  border-radius: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.product-mid {
+  margin-top: 30px;
+  height: 800px !important;
+}
+.product-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navbar-brand {
+  font-size: 50px !important;
+  line-height: 180px;
+}
+.dropdown-menu {
+  background-color: #c5b8ba !important;
+}
+.dropdown-item {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.navbar-brand > img {
+  top: 1.4% !important;
+  left: 0.2% !important;
+  position: absolute;
+  height: 50px !important;
+  width: 50px !important;
+  background-color: #ece2e1;
+}
+
+.flex-products {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.jumbotron {
+  background-color: #c2a7ce !important;
+  margin-bottom: 0px !important;
+}
+
+.container {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+}
+.alert {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #ece2e1;
+}
+.footer-products {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  overflow: hidden;
+}
+
+.hidden-alt {
+  display: none;
+}
+.hidden-alt > .alert {
+  margin-top: 10px;
+  background-color: #c2a7ce !important;
+}
+
+.dropdown-item > img {
+  width: 150px;
+  height: 150px;
+}
+
+#idx {
+  background-color: black;
+  text-align: center;
+  margin-bottom: -100px;
+}
+
+h4 {
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 20px !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .footer-products {
+    flex-direction: column;
+  }
+
+  .flex-products {
+    flex-direction: column;
+  }
+
+  .shop >a> button {
+    width: 300px !important;
+    height: 200px !important;
+    font-size: 50px !important;
+  }
+}

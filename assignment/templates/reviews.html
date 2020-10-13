@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+        {% block title %}
+        <title>Reviews</title>
+        {% endblock %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}" /> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='./videos.css') }}" />
+{% endblock %}
+
+{% block body %}
+<h1 class="jumbotron">Enter your review</h1>
+
+<div class="container">
+<form class="form-group">
+    <textarea class="form-control" type="text" name="review" ></textarea>
+    <button class="float-right btn btn-primary"type="submit">Submit</button>
+</form>
+
+<div>
+    <h3>Past reviews</h3>
+    
+    <div class="alert alert-info">
+        I bought a pack of two, comes in a nice packaging.
+        Product is original and helps to restore your body cells also it's lasts for at least 6-7hours honestly.
+        Please guys make sure the neck of bottle and the pump works properly because when i tested it the pump literally came
+        out into my hand.
+    </div>
+        <div class="alert alert-info">
+            my work keeps me outdoor most of the day and in winter with all the dust, sun my skin becomes dry quite quickly. This
+            moisturizer keeps the skin moisturized whole day after application in the morning.
+            It has a decent scent, not too strong.
+            While applying I can feel the molecules which keep the skin moisturized longer.
+            I would recommend this product and definitely would buy again
+        </div>
+</div>
+</div>
+
+{%endblock%}

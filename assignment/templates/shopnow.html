@@ -1,0 +1,100 @@
+{% extends "base.html" %} {% block head %}
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}" /> -->
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='./videos.css') }}"
+/>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@800&display=swap");
+
+  .img-thumbnail {
+    height: 300px;
+    width: 500px;
+    z-index: 0;
+    margin-top: 20px;
+  }
+  .col-sm:hover {
+    height: 200px;
+    width: 500px;
+    background-color: black;
+  }
+  p {
+    position: absolute;
+    font-size: 55px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    font-family: "Overpass", sans-serif;
+    transform: translate(-50%, -50%);
+  }
+</style>
+{% endblock %} {% block title %}
+<title>Shop Now</title>
+{% endblock %} {% block body%}
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <p>Eyes</p>
+      <a href="/eyes"
+        ><img
+          class="img-thumbnail"
+          src="https://cdn.pixabay.com/photo/2015/11/23/23/38/eyes-1059234_960_720.jpg"
+          alt="eye"
+      /></a>
+    </div>
+    <div class="col-sm">
+      <p>Face</p>
+      <a href="/face">
+        <img
+          class="img-thumbnail"
+          src="https://cdn.pixabay.com/photo/2018/01/21/14/16/woman-3096664_960_720.jpg"
+          alt="face"
+      /></a>
+    </div>
+    <div class="col-sm">
+      <p>Bestseller</p>
+      <a href="/bestsellers"
+        ><img
+          class="img-thumbnail"
+          src="https://cdn.pixabay.com/photo/2018/06/15/23/14/final-sale-3477904_960_720.jpg"
+          alt="bestseller"
+      /></a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <p>eyebrows</p>
+      <a href="/eyebrow">
+        <img
+          class="img-thumbnail"
+          src="https://cdn.pixabay.com/photo/2017/04/03/10/44/woman-2197950_960_720.jpg"
+          alt="eyebrows"
+        />
+      </a>
+    </div>
+    <div class="col-sm">
+      <p>Perfume</p>
+    <a href="/perfume">
+      <img
+        class="img-thumbnail"
+        src="https://cdn.pixabay.com/photo/2018/01/10/13/47/essential-oil-3073901_960_720.jpg"
+        alt="Perfume"
+      />
+      </a>
+
+    </div>
+    <div class="col-sm">
+      <p>Accesories</p>
+    <a href="/accessories">
+      <img
+        class="img-thumbnail"
+        src="https://cdn.pixabay.com/photo/2016/08/21/10/22/bag-1609281_960_720.jpg"
+        alt="accessories"
+      />
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

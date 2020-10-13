@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+        {% block title %}
+        <title>Eyes</title>
+        {% endblock %}
+
+    {% block head %}
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./eyeStyle.css') }}" />
+    {% endblock %}
+    <title>Chanel</title>
+  </head>
+
+{% block body %}
+        <!------------------------------------------jumbotron-------------------------------------------------------->
+      <h1 class="top-img jumbotron">
+        <div>
+            {% block jumbo %}
+          <img class="eye-img mx-auto d-block img-thumbnail rounded-circle" src="https://www.cuded.com/wp-content/uploads/2017/02/Eye-Makeup-2.jpg">
+          {% endblock %}
+          <img class="mx-auto d-block arrow-down" src="https://www.flaticon.com/svg/static/icons/svg/35/35442.svg">
+          <img class="mx-auto d-block arrow-down" src="https://www.flaticon.com/svg/static/icons/svg/35/35442.svg">
+          </div>  
+    </h1>
+        <!------------------------------------------jumbotron-------------------------------------------------------->
+<div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-thumbnail bg-dark"
+                    {% block img1 %}
+                        src="https://images-na.ssl-images-amazon.com/images/I/71JF3emZePL._SY355_.jpg" />
+                    <h4>Maybelline Drama Gel Eyeliner</h4>
+                    {% endblock %}
+                    <button class="btn bg-dark text-white">buy</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-thumbnail bg-dark"
+                    {% block img2 %}
+                        src="https://images-na.ssl-images-amazon.com/images/I/61C3SbK%2B7LL._SL1000_.jpg" />
+                    <h4>Lakme 9 to 5 Eye Color</h4>
+                    {% endblock %}
+                    <button class="btn bg-dark text-white">buy</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-thumbnail bg-dark"
+                    {% block img3 %}
+                        src="https://images-na.ssl-images-amazon.com/images/I/61qkdyu4FIL._SL1000_.jpg" />                        
+                    <h4>Lakme Mascara</h4>
+                    {% endblock %}
+                    <button class="btn bg-dark text-white">buy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-thumbnail bg-dark"
+                    {% block img4 %}
+                        src="https://images-na.ssl-images-amazon.com/images/I/51SI8lbDSyL._SL1000_.jpg" />
+                    <h4>Lakme Eyebrow Pencil</h4>
+                    {% endblock %}
+                    <button class="btn bg-dark text-white">buy</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-thumbnail bg-dark"
+                    {% block img5 %}
+                    src="https://images-na.ssl-images-amazon.com/images/I/41dBceBpXwL._SL1000_.jpg" />
+                    <h4>Make-Up Remover Wipes</h4>
+                    {% endblock %}
+                    <button class="btn bg-dark text-white">buy</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-thumbnail bg-dark"
+                    {% block img6 %}
+                        src="https://images-na.ssl-images-amazon.com/images/I/71-lAuoqc5L._SL1500_.jpg" />    
+                    <h4>Eyeshadow Palette</h4>
+                    {% endblock %}
+                    <button class="btn bg-dark text-white">buy</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+    {% block footer %}
+    <div class="social jumbotron">
+        <span class="footer-text">All Produts are Dermatologist Tested</span>
+        <img class="float-right"src="https://www.flaticon.com/svg/static/icons/svg/87/87390.svg" alt="instagram">
+        <img class="float-right"src="https://www.flaticon.com/svg/static/icons/svg/1384/1384012.svg" alt="yt">
+    </div>
+    {% endblock %}
+
+
+{% endblock %}

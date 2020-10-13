@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+        {% block title %}
+        <title>Videos</title>
+        {% endblock %}
+
+{% block head %}
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}" /> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='./videos.css') }}" />
+{% endblock %}
+<title>Chanel</title>
+</head>
+
+{% block body %}
+<div class="container" >
+    <h1 class="top-img jumbotron">Video Collection</h1>
+<div class="row">
+        <iframe class="col-sm" width="860" height="509" src="https://www.youtube.com/embed/dakFbtpH7hw" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+</div>
+
+<h1 class="mx-auto d-block">Everyday Skin Care Routine</h1>
+
+<div class="row">
+    <div class="col-sm-6">
+        <iframe class="float-left" width="415" height="258" src="https://www.youtube.com/embed/7rZI8M75Z3U" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </div>
+    <div class="col-sm-6">
+        <iframe class="float-right" width="415" height="258" src="https://www.youtube.com/embed/kr04-BUgjcQ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-sm-6">
+        <iframe class="float-left" width="415" height="258" src="https://www.youtube.com/embed/VY-qyoDq9f0" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </div>
+    <div class="col-sm-6">
+    <iframe class="float-right" width="415" height="258" src="https://www.youtube.com/embed/zY2nWEKhzFo" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-sm-6">
+<iframe class="float-left" width="415" height="258" src="https://www.youtube.com/embed/N2BI6uLB5Gc" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+    </div>
+    <div class="col-sm-6">
+        <iframe class="float-right" width="415" height="258" src="https://www.youtube.com/embed/Xieombqiujw" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+{% endblock %}

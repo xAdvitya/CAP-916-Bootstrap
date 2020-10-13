@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block head %}
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}" /> -->
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='./videos.css') }}"
+/>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
+  p {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 25px;
+  }
+</style>
+{% endblock %} {% block title %}
+<title>About</title>
+{% endblock %} {% block body %}
+<div class="container">
+  <h2 class="jumbotron top-img">ABOUT</h2>
+  <p>
+    Skincare and makeup go hand in hand and CA Skin was something I dreamt up
+    soon after CA Cosmetics. I’ve been working on this for what feels like a
+    lifetime so I can’t believe it’s finally here! Building my makeup line from
+    the ground up has taught me a lot and I’m so blessed with that knowledge to
+    apply to my brand new company! Birthing a whole new team, manufacturing,
+    fulfillment etc. separate from my cosmetics line was challenging but here we
+    are! I got the best of the best for you guys! Everything is cruelty free,
+    vegan, gluten free, paraben and sulfate free and suitable for all skin
+    types. Make sure you follow @CAskin to stay updated. So much love went into
+    this. It all starts with skin. xo, CA 💕
+  </p>
+</div>
+{%endblock%}

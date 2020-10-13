@@ -30,35 +30,33 @@
 
   <body>
     <div class="container">
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a
-            class="nav-item nav-link active"
-            class="class"
-            href="#class1"
-            data-toggle="tab"
-            >class1xx</a
-          >
-          <a
-            class="nav-item nav-link"
-            class="class"
-            href="#class2"
-            data-toggle="tab"
-            >class2</a
-          >
-          <a
-            class="nav-item nav-link"
-            class="class"
-            href="#class3"
-            data-toggle="tab"
-            >class3</a
-          >
+      <h2>Modal Example</h2>
+
+      <a class="btn btn-primary" data-toggle="modal" href="#modal-id"
+        >open modal</a
+      >
+      <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Modal title</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">this is body of model</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
         </div>
-      </nav>
-      <div class="container tab-content" id="nav-tabContent">
-        <div class="container tab-pane active" id="class1">class1</div>
-        <div class="container tab-pane" id="class2">class2</div>
-        <div class="container tab-pane" id="class3">class3</div>
       </div>
     </div>
   </body>

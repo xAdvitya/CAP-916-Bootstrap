@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='/logic.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <!------------------------------------------jumbotron-------------------------------------------------------->
+
+
+    <div class="jumbotron jumbotron-fluid p-2">
+      <h1 class="text-capitalize text-center">Beauty products you need !</h1>
+    </div>
+<!------------------------------------------------product-top view------------------------------------------------------------------>
+
+      <div class="product-top row">
+        <img class="img-fluid col  w-20 mx-auto d-block"
+          src="https://images.unsplash.com/photo-1498842812179-c81beecf902c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" />
+      
+        <img class="col" src="https://i.postimg.cc/TY5jhCcb/main.png" alt="photo">
+      
+        <article class="shop col">
+      
+          <a href="/shopnow"> <button class="btn btn-primary">SHOP NOW</button></a>
+      
+        </article>
+      
+      </div>
+
+<!------------------------------------------------Bestsellers------------------------------------------------------------------>
+    
+    </div>
+    <div class="hidden-alt">
+      <h2 class="alert text-center">40% discount on first purchase*</h2>
+    </div>
+    <!-- <div class="container-fluid p-0"> -->
+      <h2 class="alert text-center">BESTSELLING</h2>
+      <div class="flex-products container">
+        <div class="card">
+          <img class="img-thumbnail bg-dark"
+            src="https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw66005fe7/hi-res/45638.jpg?sw=290" />
+          <h4>PRO KISS'R LIP CARE SET</h4>
+          <button class="btn text-white">buy</button>
+        </div>
+    
+        <div class="card">
+          <img class="img-thumbnail bg-dark"
+            src="https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw94b20b65/hi-res/51547_alt1.jpg?sw=290%22%20class=%22hover-hide%20mainimage%20lazyloaded%22%20alt=%22PRO%20FILT%E2%80%99R%20MINI%20MATTIFYING%20PRIMER%22%20src=%22https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw94b20b65/hi-res/51547_alt1.jpg?sw=290" />
+          <h4>MINI HYDRATING PRIMER</h4>
+          <button class="btn text-white">buy</button>
+        </div>
+    
+        <div class="card">
+          <img class="img-thumbnail bg-dark"
+            src="https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwb702fb12/hi-res/42507.jpg?sw=290" />
+          <h4>INSTANT RETOUCH POWDER</h4>
+          <button class="btn text-white">buy</button>
+        </div>
+      </div>
+    <!----------------------------------------------image divide-------------------------------------------------------------------->
+      <img class="img-fluid products w-100"
+        src="https://www.fentybeauty.com/on/demandware.static/-/Sites-FENTY-Library/default/dw18e37834/homepage/fullSlider/8387-CHEEKY-GLOSS-BOMB-HP-UPDATE_TERTIARY_SLIDER_DESKTOP_960x591.jpg" />
+      <h2 class="alert text-center">Our new class</h2>
+      <div class="flex-products container">
+        <div class="card">
+          <img class="img-thumbnail bg-dark"
+            src="https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwcc3d79cb/hi-res/FB60001_FB6002.jpg?sw=290" />
+          <h4>MATCH STIX TRIO</h4>
+          <button class="btn text-white">buy</button>
+        </div>
+
+        <!--------------------------------------------our new class---------------------------------------------------------------------->
+    
+        <div class="card">
+          <img class="img-thumbnail bg-dark"
+            src="https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw6d08ad67/hi-res/FB30003_FB3014.jpg?sw=290" />
+          <h4>MATCH STIX MATTE SKINSTICK</h4>
+          <button class="btn text-white">buy</button>
+        </div>
+        <div class="card">
+          <img class="img-thumbnail bg-dark"
+            src="https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw75adf672/hi-res/FB30004_FB3046.jpg?sw=290"
+            class="hover-hide mainimage lazyloaded" alt="MATCH STIX SHIMMER SKINSTICK" style="min-height: 31.8px;"
+            src="https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw75adf672/hi-res/FB30004_FB3046.jpg?sw=290" />
+          <h4>MATCH STIX SHIMMER SKINSTICK</h4>
+          <button class="btn text-white">buy</button>
+        </div>
+      </div>
+    <!------------------------------------------------image divide end------------------------------------------------------------------>
+      <div class="footer-products">
+        <img class="img-fluid mx-auto d-block" src="https://i.postimg.cc/SsYCGhyw/product1.jpg" />
+        <img class="img-fluid mx-auto d-block img-right " src="https://i.postimg.cc/X7qGKWQx/eye.jpg" />
+      </div>
+      <button type="button" class="btn coll text-white btn-block text-white" data-toggle="collapse" data-target="#idx">
+
+        <!----------------------------------------------------T&C-------------------------------------------------------------->
+        <h3>Terms and Conditions</h3>
+      </button>
+      <div id="idx" class="collapse text-white">
+        <p>
+          You are specifically restricted from all of the following:
+        <ul>
+          <li>publishing any Website material in any other media;</li>
+          <li>selling, sublicensing and/or otherwise commercializing any Website material;</li>
+          <li>publicly performing and/or showing any Website material;</li>
+          <li>using this Website in any way that is or may be damaging to this Website;</li>
+          <li>using this Website in any way that impacts user access to this Website;</li>
+          <li>using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website,
+            or to
+            any person or business entity;</li>
+          <li>engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to
+            this
+            Website;</li>
+          <li>using this Website to engage in any advertising or marketing.</li>
+        </ul>
+    
+        </p>
+      </div>
+{% endblock %}
